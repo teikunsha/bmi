@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI計算機</title>
+</head>
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="./css/bmi.css">
+    
+<body>
+    <div class="container">
+        <div class="character">
+            <img class="man" src="./img/taijukei1_man.png" alt="">
+            <img class="woman" src="./img/taijukei2_woman.png" alt="">
+        </div>
+        <div class="bmi">
+            <div class="decoretaion-top">
+                <span>BMI計算機</span>
+            </div>
+            <p class="explanation">BMI 稱為身體質量指數（Body Mass
+                Index，縮寫為BMI），是目前美國疾病管制局及世界衛生組織所認可，利用身高為基礎來測量體重是否符合標準，是目前國際上通用評估胖瘦的方式。</p>
+            <span class="text">請於空欄輸入數值後按「計算」按鈕</span>
+            <div class="height">
+                <span>身高</span>
+                <input type="number" id="height" oninput="value=value.replace('-', '')" placeholder="例：170"
+                    onfocus="this.placeholder=''" onblur="this.placeholder='例：170'">
+                <span>cm</span>
+            </div>
+            <div class="weight">
+                <span>體重</span>
+                <input type="number" id="weight" oninput="value=value.replace('-', '')" placeholder="例：65"
+                    onfocus="this.placeholder=''" onblur="this.placeholder='例：65'">
+                <span>kg</span>
+            </div>
+            <span class="calc" id="calc">計算</span>
+            <span class="reset" id="reset">清除</span>
+            <div class="result">
+                <span>BMI・・・
+                    <span id="result"></span>
+                </span>
+                <span>體位・・・
+                    <span id="dimension"></span>
+                </span>
+            </div>
+            <div class="decoretaion-middle">
+                <span>計算公式</span>
+            </div>
+            <span class="formula">BMI(kg/㎡)＝ 體重(kg) ÷ 身高(m) ÷ 身高(m）</span>
+            <div class="bmiform">
+                <table>
+                    <tr class="title">
+                        <th>成人肥胖定義</th>
+                        <th>身體質量指數(BMI)(kg/㎡)</th>
+                        <th>腰圍(cm)</th>
+                    </tr>
+                    <tr class="underweight">
+                        <td>體重過輕</td>
+                        <td>BMI < 18.5</td>
+                        <td></td>
+                    </tr>
+                    <tr class="normal">
+                        <td>健康體位</td>
+                        <td>18.5 <= BMI<24</td>
+                        <td></td>
+                    </tr>
+                    <tr class="abnormal">
+                        <td>體位異常</td>
+                        <td class='test'>
+                            <span>過重：24 <= BMI < 27</span>
+                            <span>輕度肥胖：27 <= BMI < 30</span>
+                            <span>中度肥胖：30 <= BMI < 35</span>
+                            <span>重度肥胖：BMI >= 35</span>
+                        </td>
+                        <td>
+                            <span>男性：>= 90 公分</span>
+                            <span>女性：>= 80 公分</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <script src="./js/bmi.js"></script>
+</body>
+
+
+</html>

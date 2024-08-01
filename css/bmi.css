@@ -1,0 +1,370 @@
+*{
+    box-sizing: border-box;
+    
+}
+
+body{
+    margin: 0 auto;
+    font-family: 'Kiwi Maru', serif;
+    letter-spacing: 3px;
+    
+}
+
+.container{
+    width: 100%;
+    background-color: rgb(236, 218, 202);
+    
+}
+
+.character{
+    position: relative;
+
+}
+
+.man, .woman{
+    position: absolute;
+    position: fixed;
+    top: 80px;
+    width: 400px;
+
+}
+
+.woman{
+    right: 0;
+
+}
+
+.bmi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+}
+
+.decoretaion-top{
+    padding-top: 35px;
+    width: 50%;
+
+}
+
+.decoretaion-top > span{
+    display: block;
+    height: 60px;
+    background-color: rgb(231, 131, 37);
+    padding: 5px 0;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 20px;
+
+}
+
+.explanation{
+    width: 550px;
+    padding: 40px 0;
+    font-size: 23px;
+    
+}
+
+.text{
+    font-size: 20px;
+    margin-bottom:35px;
+    text-align: center;
+
+}
+
+.height, .weight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    font-size: 17px;
+    padding-bottom: 10px;
+    
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+
+}
+
+input{
+    width: 100px;
+    height: 40px;
+    margin: 8px 20px;
+    border:  3px solid orange;
+    border-radius: 7px;
+    outline: none
+    
+}
+
+.calc , .reset{
+    cursor: pointer;
+    width: 15%;
+    height: 50px;
+    background-color: orange ;
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
+    padding: 10px;
+    color: rgb(255, 244, 244);
+    font-size: 20px;
+    
+}
+
+.result{
+    width: 100%;
+    text-align: center;
+}
+
+.result > span{
+    display: block;
+    font-size: 23px;
+    
+}
+
+#result, #dimension{
+    color:rgba(24, 124, 4, 0.781);
+    font-weight: 700;
+
+}
+
+.decoretaion-middle{
+    width: 40%;
+    margin: 35px;
+
+}
+
+.decoretaion-middle > span{
+    background-color:  rgb(231, 131, 37);;
+    border: 1px solid transparent;
+    display: block;
+    height: 35px;
+    border-radius: 5px;
+    padding: 2px 30px;
+    font-size: 18px;
+    letter-spacing: 5px;
+
+}
+
+.formula{
+    display: block;
+    font-size: 23px; 
+    font-weight: 600;
+
+}
+
+.bmiform{
+    z-index: 1;
+    margin: 35px;
+    background-color: rgba(92, 99, 2, 0.781);
+
+}
+
+table{
+    text-align: center;
+    border-collapse: separate;
+    -webkit-border-vertical-spacing: 6px; 
+    -webkit-border-horizontal-spacing: 6px; 
+
+}
+
+table tr td span{
+    display: block;
+
+}
+
+.title{
+    background-color: orange;
+    font-size: 22px;
+    
+}
+
+.title th{
+    padding: 5px 10px;
+
+}
+
+tr td{
+    padding: 5px 10px;
+    font-size: 20px;
+
+}
+
+.underweight, .abnormal{
+    background-color: #F3F3F3;
+
+}
+
+.normal{
+    background-color: #FCFCFD;
+
+}
+
+@media (max-width: 1170px) {
+    .man, .woman{
+        position: absolute;
+        width: 300px;
+    
+    }
+}
+
+@media (max-width: 1020px) {
+    .man, .woman{
+        top: 350px;
+        width: 200px;
+    
+    }
+}
+
+@media (max-width: 830px) {
+    .title{
+        font-size: 16px;
+        
+    }  
+    tr td{
+        font-size: 14px;
+
+    }
+}
+
+@media (max-width: 675px) {
+    .decoretaion-top{
+        padding-top: 25px;
+
+    }
+    .decoretaion-top > span{
+        height: 40px;
+        padding: 2px 0;
+        font-size: 25px;
+    
+    }
+    .explanation{
+        width: 550px;
+        padding: 15px 0;
+        font-size: 21px;
+        
+    }
+    .result > span{
+        display: block;
+        font-size: 18px;
+        
+    }
+    .calc , .reset{
+        width: 15%;
+        height: 35px;
+        margin: 15px;
+        padding: 3px;
+        font-size: 18px;
+        
+    }
+    .formula{
+        font-size: 18px;
+    }
+    .title{
+        font-size: 13px;
+        
+    }
+    tr td{
+        font-size: 11px;
+
+    }
+}
+
+@media (max-width: 600px) {
+    .man, .woman{
+        top: 350px;
+        width: 120px;
+    
+    }
+    .decoretaion-top{
+        width: 40%;
+
+    }
+    .decoretaion-top > span{
+        font-size: 20px;
+        letter-spacing: 10px;
+    
+    }
+    .explanation{
+        width: 70%;
+        font-size: 17px;
+        
+    }
+    .text{
+        font-size: 16px;
+        margin-bottom:25px;
+    
+    }
+}
+
+@media (max-width: 490px) {
+    .formula{
+        font-size: 15px;
+
+    }
+    .title{
+        font-size: 10px;
+        
+    }  
+    tr td{
+        font-size: 9px;
+
+    }
+}
+
+@media (max-width: 450px) {
+    .man, .woman{
+        top: 480px;
+        width: 100px;
+    
+    }
+}
+
+@media (max-width: 420px) {
+    .formula{
+        font-size: 15px;
+        padding: 0 10px;
+
+    }
+    .man, .woman{
+        top: 500px;
+        width: 100px;
+    
+    }
+    .decoretaion-top > span{
+        font-size: 16px;
+        padding: 5px 0 5px 3px;
+        
+    }
+    .text{
+        font-size: 13px;
+    
+    }
+    .result > span{
+        font-size: 13px;
+        
+    }
+
+    #result, #dimension{
+        font-size: 10px;
+
+    }
+
+    .decoretaion-middle{
+        width: 30%;
+        margin: 25px;
+    
+    }
+    .decoretaion-middle > span{
+        height: 25px;
+        border-radius: 5px;
+        padding: 1px 0 0 15px;
+        font-size: 15px;
+        letter-spacing: 5px;
+
+    }
+}
