@@ -18,4 +18,4 @@
 
 ## 3. 部署
 
-#### [https://gsbka7.github.io/bmi/](https://gsbka7.github.io/bmi/)
+#### [https://teikunsha.github.io/bmi/](https://teikunsha.github.io/bmi/)
